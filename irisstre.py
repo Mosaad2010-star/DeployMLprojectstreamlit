@@ -23,7 +23,7 @@ st.write("---")
 # ---------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load("models/iris_model.pkl")
+    return joblib.load("iris_model.pkl")
 
 model = load_model()
 target_names = load_iris().target_names
